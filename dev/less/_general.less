@@ -1,19 +1,37 @@
 @font-face {
-  font-family: 'Raleway';
+  font-family: 'Intro';
   font-style: normal;
-  font-weight: 400;
-  src: local('Raleway'), local('Raleway-Regular'),
-    url('../fonts/Raleway-Regular.woff2') format('woff2'),
-    url('../fonts/Raleway-Regular.woff') format('woff');
+  font-weight: 300;
+  src: local('Intro'), local('Intro-Light'),
+    url('../fonts/intro/Intro-Light.woff2') format('woff2'),
+    url('../fonts/intro/Intro-Light.woff') format('woff');
   font-display: swap;
 }
 @font-face {
-  font-family: 'Raleway';
+  font-family: 'Intro';
   font-style: normal;
-  font-weight: 500;
-  src: local('Raleway'), local('Raleway-Medium'),
-    url('../fonts/Raleway-Medium.woff2') format('woff2'),
-    url('../fonts/Raleway-Medium.woff') format('woff');
+  font-weight: 400;
+  src: local('Intro'), local('Intro-Regular'),
+    url('../fonts/intro/Intro-Regular.woff2') format('woff2'),
+    url('../fonts/intro/Intro-Regular.woff') format('woff');
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Intro';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Intro'), local('Intro-Bold'),
+    url('../fonts/intro/Intro-Bold.woff2') format('woff2'),
+    url('../fonts/intro/Intro-Bold.woff') format('woff');
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Core Sans C';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Core Sans C'), local('CoreSansC-Bold'),
+    url('../fonts/core/CoreSansC-Bold.woff2') format('woff2'),
+    url('../fonts/core/CoreSansC-Bold.woff') format('woff');
   font-display: swap;
 }
 
@@ -26,7 +44,7 @@ body {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
-  font-family: @font;
+  font-family: @text;
   font-size: 1.6rem;
   font-style: normal;
   font-weight: 400;
@@ -38,16 +56,8 @@ body {
 }
 
 .container {
-  max-width: 1260px;
+  max-width: 1270px;
   margin: 0 auto;
   width: 100%;
   padding: 0 30px;
-}
-.hyphenate {
-  overflow-wrap: break-word;
-  word-wrap: break-word;
-  -webkit-hyphens: auto;
-  -moz-hyphens: auto;
-  -ms-hyphens: auto;
-  hyphens: auto;
 }
