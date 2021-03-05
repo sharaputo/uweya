@@ -28,6 +28,15 @@
 @font-face {
   font-family: 'Core Sans C';
   font-style: normal;
+  font-weight: 300;
+  src: local('Core Sans C'), local('CoreSansC-Light'),
+    url('../fonts/core/CoreSansC-Light.woff2') format('woff2'),
+    url('../fonts/core/CoreSansC-Light.woff') format('woff');
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Core Sans C';
+  font-style: normal;
   font-weight: 700;
   src: local('Core Sans C'), local('CoreSansC-Bold'),
     url('../fonts/core/CoreSansC-Bold.woff2') format('woff2'),
@@ -47,7 +56,7 @@ body {
   font-family: @text;
   font-size: 1.6rem;
   font-style: normal;
-  font-weight: 400;
+  font-weight: 300;
   line-height: 1.2;
   word-wrap: break-word;
   overflow-wrap: break-word;
@@ -55,9 +64,55 @@ body {
   overflow-x: hidden;
 }
 
+.btn {
+  display: inline-block;
+  font-family: @text;
+  font-size: 1.5rem;
+  line-height: 1;
+  font-style: normal;
+  font-weight: 700;
+  text-align: center;
+  white-space: nowrap;
+  color: @white;
+  background-color: @green;
+  padding: 20px 50px;
+  transition: background-color @anim-slow;
+  &:hover,
+  &:focus {
+    background-color: @green-dark;
+  }
+  &--wide {
+    display: block;
+    width: 100%;
+  }
+  &--big {
+    font-size: 1.6rem;
+  }
+  &--light {
+    opacity: 0.66;
+  }
+}
 .container {
-  max-width: 1270px;
+  max-width: 1390px;
   margin: 0 auto;
   width: 100%;
   padding: 0 30px;
+}
+.text-link {
+  transition: color @anim-fast;
+  &:hover,
+  &:focus {
+    color: @green-dark !important;
+  }
+}
+.screen-reader {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
 }
