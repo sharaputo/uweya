@@ -1,1 +1,1 @@
-"use strict";
+"use strict";const mySVGsToInject=document.querySelectorAll("img.inject-me");SVGInjector(mySVGsToInject);

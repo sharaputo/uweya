@@ -1,5 +1,30 @@
 @media (hover: hover) {
 }
+@media only screen and (max-width: 1200px) {
+  .footer {
+    &__body {
+      flex-wrap: wrap;
+    }
+    .form {
+      margin-right: 0;
+      margin-bottom: 35px;
+    }
+    .info {
+      flex-basis: 650px;
+      max-width: 650px;
+      align-items: center;
+      margin-left: 0;
+    }
+    .details {
+      margin-right: 20px;
+      margin-left: 0;
+    }
+    .contacts {
+      margin-right: auto;
+      margin-left: 0;
+    }
+  }
+}
 @media @xl {
 }
 @media @lg {
@@ -12,4 +37,63 @@
   }
 }
 @media @xs {
+  .footer {
+    padding-top: 40px;
+    padding-bottom: 110px;
+    .form {
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+    .message {
+      text-align: center;
+      margin-right: 0;
+      margin-bottom: 20px;
+      &__title {
+        font-size: 2rem;
+        margin-bottom: 20px;
+      }
+      &__info {
+        font-size: 1.6rem;
+      }
+    }
+    .subscribe {
+      flex-basis: 320px;
+      max-width: 320px;
+    }
+    .info {
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+    .details {
+      flex-basis: 320px;
+      max-width: 320px;
+      text-align: center;
+      margin-right: 0;
+      margin-bottom: 35px;
+      &__logo {
+        margin-right: auto;
+        margin-bottom: 20px;
+        margin-left: auto;
+      }
+      &__address {
+        margin-bottom: 20px;
+      }
+      &__copyright {
+        margin-bottom: 20px;
+      }
+    }
+    .contacts {
+      flex-basis: 320px;
+      max-width: 320px;
+      text-align: center;
+      margin-right: 0;
+      &__link {
+        font-size: 1.6rem;
+        margin-bottom: 20px;
+      }
+      &__socials {
+        justify-content: center;
+      }
+    }
+  }
 }
