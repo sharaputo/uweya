@@ -1,1 +1,1 @@
-"use strict";const mySVGsToInject=document.querySelectorAll("img.inject-me");SVGInjector(mySVGsToInject);
+"use strict";const mySVGsToInject=document.querySelectorAll("img.inject-me");SVGInjector(mySVGsToInject);const menuSwitcher=document.querySelector("#burger_menu"),headerMenu=document.querySelector("#navigation");menuSwitcher.addEventListener("click",(function(){this.classList.toggle("active"),headerMenu.classList.toggle("active")}));
