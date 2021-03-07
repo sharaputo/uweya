@@ -11,28 +11,76 @@
     flex: 0 0 50px;
     width: 100%;
     max-width: 50px;
+    margin-right: auto;
   }
   &__menu {
-  }
-  .logo {
-    &__image {
-    }
+    margin-right: auto;
   }
   .menubar {
     &__list {
       display: flex;
     }
     &__item {
+      &:not(:last-child) {
+        margin-right: 40px;
+      }
     }
     &__link {
+      position: relative;
+      font-weight: 400;
+      line-height: 1;
+      color: @black;
+      padding-bottom: 10px;
+      transition: color @anim-fast;
+      overflow: visible;
+      &::after {
+      }
+      &:hover,
+      &:focus {
+        color: @green-dark;
+        &::after {
+          width: 100%;
+        }
+      }
+      &--active {
+        color: @green-dark;
+        cursor: default;
+        &::after {
+          content: '';
+          position: absolute;
+          bottom: 0;
+          left: 0;
+          width: 100%;
+          height: 4px;
+          background-image: url('../img/icons/icon-focus.svg');
+          background-position: 50% 50%;
+          background-size: contain;
+          background-repeat: no-repeat;
+        }
+      }
     }
   }
   .whatsapp {
     display: flex;
     align-items: center;
+    color: @black;
+    margin-right: 35px;
+    transition: color @anim-fast;
     &__icon {
+      flex: 0 0 30px;
+      width: 100%;
+      max-width: 30px;
+      margin-right: 15px;
+      svg {
+        fill: @green;
+      }
     }
     &__phone {
+      padding-top: 2px;
+    }
+    &:hover,
+    &:focus {
+      color: @green-dark;
     }
   }
   &__burger {
@@ -54,7 +102,8 @@
         }
       }
       .burger__line {
-        transform: scale(0);
+        opacity: 0;
+        transform: rotate(90deg);
       }
     }
   }
@@ -66,8 +115,9 @@
       left: 0;
       width: 100%;
       height: 2px;
-      background: @black;
-      transition: transform @anim-slow;
+      background-color: @black;
+      transition: opacity @anim-slow, transform @anim-slow,
+        background-color @anim-slow;
     }
     &::before,
     &::after {
@@ -77,14 +127,23 @@
       left: 0;
       width: 100%;
       height: 2px;
-      background: @black;
-      transition: transform @anim-slow;
+      background-color: @black;
+      transition: transform @anim-slow, background-color @anim-slow;
     }
     &::before {
       top: 0;
     }
     &::after {
       bottom: 0;
+    }
+    &:hover {
+      .burger__line {
+        background-color: @green-dark;
+      }
+      &::before,
+      &::after {
+        background-color: @green-dark;
+      }
     }
   }
   .side-menu {
@@ -97,9 +156,10 @@
     justify-content: flex-end;
     opacity: 0;
     transition: opacity @anim-slow;
-    z-index: 3;
+    z-index: -1;
     &.active {
       opacity: 1;
+      z-index: 3;
       .side-menu__backdrop {
         opacity: 1;
       }
