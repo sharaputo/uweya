@@ -7,6 +7,6 @@ const menuSwitcher = document.querySelector('#burger_menu');
 const headerMenu = document.querySelector('#navigation');
 
 menuSwitcher.addEventListener('click', function () {
-  this.classList.toggle('active');
+  this.classList.toggle('burger--is-active');
   headerMenu.classList.toggle('active');
 });
