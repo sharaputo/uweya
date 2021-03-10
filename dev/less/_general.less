@@ -1,49 +1,3 @@
-@font-face {
-  font-family: 'Intro';
-  font-style: normal;
-  font-weight: 300;
-  src: local('Intro'), local('Intro-Light'),
-    url('../fonts/intro/Intro-Light.woff2') format('woff2'),
-    url('../fonts/intro/Intro-Light.woff') format('woff');
-  font-display: swap;
-}
-@font-face {
-  font-family: 'Intro';
-  font-style: normal;
-  font-weight: 400;
-  src: local('Intro'), local('Intro-Regular'),
-    url('../fonts/intro/Intro-Regular.woff2') format('woff2'),
-    url('../fonts/intro/Intro-Regular.woff') format('woff');
-  font-display: swap;
-}
-@font-face {
-  font-family: 'Intro';
-  font-style: normal;
-  font-weight: 700;
-  src: local('Intro'), local('Intro-Bold'),
-    url('../fonts/intro/Intro-Bold.woff2') format('woff2'),
-    url('../fonts/intro/Intro-Bold.woff') format('woff');
-  font-display: swap;
-}
-@font-face {
-  font-family: 'Core Sans C';
-  font-style: normal;
-  font-weight: 300;
-  src: local('Core Sans C'), local('CoreSansC-Light'),
-    url('../fonts/core/CoreSansC-Light.woff2') format('woff2'),
-    url('../fonts/core/CoreSansC-Light.woff') format('woff');
-  font-display: swap;
-}
-@font-face {
-  font-family: 'Core Sans C';
-  font-style: normal;
-  font-weight: 700;
-  src: local('Core Sans C'), local('CoreSansC-Bold'),
-    url('../fonts/core/CoreSansC-Bold.woff2') format('woff2'),
-    url('../fonts/core/CoreSansC-Bold.woff') format('woff');
-  font-display: swap;
-}
-
 :root {
   font-size: 10px;
 }
@@ -98,13 +52,6 @@ body {
   width: 100%;
   padding: 0 30px;
 }
-.text-link {
-  transition: color @anim-fast;
-  &:hover,
-  &:focus {
-    color: @green-dark !important;
-  }
-}
 .screen-reader {
   border: 0;
   clip: rect(0 0 0 0);
@@ -115,4 +62,11 @@ body {
   position: absolute;
   white-space: nowrap;
   width: 1px;
+}
+.text-link {
+  transition: color @anim-fast;
+  &:hover,
+  &:focus {
+    color: @green-dark !important;
+  }
 }
