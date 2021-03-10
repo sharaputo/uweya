@@ -1,7 +1,9 @@
 .DS_Store
-prepros.config
-/dev
-/node_modules
 package-lock.json
 .gitignore
 package.json
+prepros.config
+/dev
+/node_modules
+/archive
+
