@@ -116,9 +116,8 @@
   .contacts {
     flex-grow: 0;
     flex-shrink: 0;
-    flex-basis: 170px;
-    width: 100%;
-    max-width: 170px;
+    flex-basis: 190px;
+    flex-basis: auto;
     margin-left: auto;
     &__link {
       display: block;
@@ -127,21 +126,8 @@
       margin-bottom: 25px;
     }
     &__socials {
-      display: grid;
-      grid-template-columns: repeat(4, 30px);
+      display: flex;
       align-items: center;
-      column-gap: 10px;
-    }
-    &__social {
-      i {
-        font-size: 3rem;
-        color: @green;
-        transition: color @anim-slow;
-        &:hover,
-        &:focus {
-          color: @green-dark;
-        }
-      }
     }
   }
 }

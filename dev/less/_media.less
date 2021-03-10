@@ -47,6 +47,11 @@
     &__whatsapp {
       margin-right: 0;
     }
+    .whatsapp {
+      &__phone {
+        display: block;
+      }
+    }
   }
 }
 @media @sm {
@@ -55,6 +60,27 @@
   }
 }
 @media @xs {
+  .header {
+    .whatsapp {
+      &__phone {
+        display: none;
+      }
+    }
+    .side-menu {
+      &__backdrop {
+        display: none;
+      }
+      &__wrapper {
+        width: 100%;
+        align-items: center;
+        text-align: center;
+        padding: 90px 20px;
+      }
+    }
+    .menu {
+      margin-bottom: 40px;
+    }
+  }
   .footer {
     padding-top: 40px;
     padding-bottom: 110px;
@@ -102,7 +128,6 @@
     }
     .contacts {
       flex-basis: 320px;
-      max-width: 320px;
       text-align: center;
       margin-right: 0;
       &__link {
