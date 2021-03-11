@@ -44,6 +44,16 @@ h3 {
     display: block;
     height: 265px;
     margin-bottom: 25px;
+    overflow: hidden;
+    img {
+      transition: transform @anim-fast;
+    }
+    &:hover,
+    &:focus {
+      img {
+        transform: scale(1.05) rotate(1deg);
+      }
+    }
   }
   &__date {
     font-weight: 700;
@@ -61,7 +71,7 @@ h3 {
     margin-bottom: 15px;
   }
   &__link {
-    display: flex;
+    display: inline-flex;
     align-items: center;
     color: @green-dark;
     .label {
@@ -71,6 +81,13 @@ h3 {
     }
     .icon-arrow {
       font-size: 0.8rem;
+      transition: transform @anim-slow;
+    }
+    &:hover,
+    &:focus {
+      .icon-arrow {
+        transform: translate3d(10px, 0, 0);
+      }
     }
   }
 }
