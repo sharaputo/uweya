@@ -29,10 +29,11 @@
     }
   }
   .header {
-    .whatsapp {
-      &__phone {
-        display: none;
-      }
+    &__whatsapp {
+      margin-right: 35px;
+    }
+    &__phone {
+      display: none;
     }
   }
 }
@@ -45,19 +46,15 @@
 }
 @media @md {
   .header {
-    &__logo {
-      margin-right: 0;
-    }
     &__menu {
       display: none;
     }
     &__whatsapp {
-      margin-right: 0;
+      margin-right: 15px;
     }
-    .whatsapp {
-      &__phone {
-        display: block;
-      }
+    &__phone {
+      display: block;
+      margin-right: auto;
     }
   }
   .contacts {
@@ -247,10 +244,14 @@
     }
   }
   .header {
-    .whatsapp {
-      &__phone {
-        display: none;
-      }
+    &__logo {
+      margin-right: 0;
+    }
+    &__whatsapp {
+      margin-right: 0;
+    }
+    &__phone {
+      display: none;
     }
     .side-menu {
       &__close {
