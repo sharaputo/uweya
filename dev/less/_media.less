@@ -3,23 +3,27 @@
 @media only screen and (max-width: 1200px) {
   .footer {
     &__body {
-      flex-wrap: wrap;
-    }
-    .form {
-      margin-right: 0;
-      margin-bottom: 35px;
-    }
-    .info {
-      flex-basis: 650px;
       max-width: 650px;
-      align-items: center;
-      margin-left: 0;
+      flex-wrap: wrap;
+      justify-content: center;
+      margin-right: auto;
+      margin-left: auto;
     }
     .details {
-      margin-right: 20px;
-      margin-left: 0;
+      flex-shrink: 1;
+      flex-basis: 320px;
+      order: 2;
     }
-    .contacts {
+    .form {
+      flex-basis: 100%;
+      justify-content: center;
+      order: 1;
+      margin-bottom: 35px;
+    }
+    .contact {
+      flex-shrink: 1;
+      align-self: center;
+      order: 3;
       margin-right: auto;
       margin-left: 0;
     }
@@ -192,6 +196,23 @@
   .footer {
     padding-top: 40px;
     padding-bottom: 110px;
+    .details {
+      order: 1;
+      text-align: center;
+      margin-right: 0;
+      margin-bottom: 35px;
+      &__logo {
+        margin-right: auto;
+        margin-bottom: 20px;
+        margin-left: auto;
+      }
+      &__address {
+        margin-bottom: 20px;
+      }
+      &__copyright {
+        margin-bottom: 20px;
+      }
+    }
     .form {
       flex-wrap: wrap;
       justify-content: center;
@@ -211,28 +232,6 @@
     .subscribe {
       flex-basis: 320px;
       max-width: 320px;
-    }
-    .info {
-      flex-wrap: wrap;
-      justify-content: center;
-    }
-    .details {
-      flex-basis: 320px;
-      max-width: 320px;
-      text-align: center;
-      margin-right: 0;
-      margin-bottom: 35px;
-      &__logo {
-        margin-right: auto;
-        margin-bottom: 20px;
-        margin-left: auto;
-      }
-      &__address {
-        margin-bottom: 20px;
-      }
-      &__copyright {
-        margin-bottom: 20px;
-      }
     }
     .contact {
       flex-basis: 320px;
