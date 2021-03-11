@@ -30,8 +30,6 @@
   }
   &__logo {
     flex: 0 0 50px;
-    width: 100%;
-    max-width: 50px;
     margin-right: auto;
   }
   &__menu {
@@ -73,34 +71,32 @@
     }
   }
   &__whatsapp {
-    margin-right: 35px;
-  }
-  .whatsapp {
-    display: flex;
-    align-items: center;
-    color: @black;
-    transition: color @anim-fast;
-    &__icon {
-      flex-grow: 0;
-      flex-shrink: 0;
-      flex-basis: 30px;
-      margin-right: 15px;
+    flex-grow: 0;
+    flex-shrink: 0;
+    flex-basis: 30px;
+    margin-right: 15px;
+    span {
+      font-size: 3rem;
+      color: @green;
+      transition: color @anim-slow;
+    }
+    &:hover,
+    &:focus {
       span {
-        font-size: 3rem;
-        color: @green;
+        color: @green-dark;
       }
     }
-    &__phone {
-      padding-top: 2px;
-    }
+  }
+  &__phone {
+    color: @black;
+    transition: color @anim-fast;
+    margin-right: 35px;
   }
   .burger {
     position: relative;
     flex-grow: 0;
     flex-shrink: 0;
     flex-basis: 36px;
-    width: 100%;
-    max-width: 36px;
     height: 20px;
     &__inner {
       display: block;

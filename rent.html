@@ -140,10 +140,22 @@
     </div>
   </div>
 </header>  <main>
-    <section class="rent">
-      <h1 class="page-title rent__title">Аренда</h1>
+    <section class="v-blog">
+      <h1 class="page-title v-blog__title">Видеоблог</h1>
       <div class="container">
-        
+        <form action="#" class="search-form v-blog__search">
+          <input type="search" name="q" placeholder="Поиск по блогу" class="search-form__input">
+          <button type="submit" class="search-form__submit" aria-label="search">
+            <span class="icon-search"></span>
+          </button>
+        </form>
+        <div class="v-blog__cards">
+          <article class="v-blog-entry">
+            <a href="#yoga&massage" class="blog-entry__image ibg" aria-hidden="true">
+              <img src="img/v-blog-entry.jpg" alt="">
+            </a>
+          </article>
+        </div>
       </div>
     </section>
   </main>
