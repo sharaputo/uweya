@@ -2,6 +2,7 @@
 const menuOpenBtn = document.querySelector('#burger_open');
 const menuCloseBtn = document.querySelector('#burger_close');
 const headerMenu = document.querySelector('#navigation');
+const sideMenuBackdrop = document.querySelector('.side-menu__backdrop');
 
 menuOpenBtn.addEventListener('click', function () {
   headerMenu.classList.add('active');
@@ -15,6 +16,10 @@ window.addEventListener('keydown', function (event) {
   if (event.key === 'Escape') {
     headerMenu.classList.remove('active');
   }
+});
+
+sideMenuBackdrop.addEventListener('click', function () {
+  headerMenu.classList.remove('active');
 });
 
 // Header transform effect
