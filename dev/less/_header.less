@@ -33,15 +33,6 @@
       padding-bottom: 10px;
       transition: color @anim-fast;
       overflow: visible;
-      &::after {
-      }
-      &:hover,
-      &:focus {
-        color: @green-dark;
-        &::after {
-          width: 100%;
-        }
-      }
       &--active {
         color: @green-dark;
         cursor: default;
@@ -80,10 +71,6 @@
     }
     &__phone {
       padding-top: 2px;
-    }
-    &:hover,
-    &:focus {
-      color: @green-dark;
     }
   }
   .burger {
@@ -195,10 +182,6 @@
       text-transform: uppercase;
       color: @black;
       transition: color @anim-fast;
-      &:hover,
-      &:focus {
-        color: @green-dark;
-      }
       &--active {
         color: @green-dark;
         cursor: default;

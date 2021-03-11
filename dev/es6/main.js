@@ -1,7 +1,3 @@
-// SVG Inline Injector
-const mySVGsToInject = document.querySelectorAll('img.inject-me');
-SVGInjector(mySVGsToInject);
-
 // Header burger menu open & close
 const menuOpenBtn = document.querySelector('#burger_open');
 const menuCloseBtn = document.querySelector('#burger_close');
