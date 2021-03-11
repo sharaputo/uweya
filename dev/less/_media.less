@@ -58,36 +58,45 @@
   }
 }
 @media @sm {
+  .blog {
+    &__cards {
+      row-gap: 50px;
+    }
+  }
   .container {
     padding: 0 15px;
   }
 }
 @media @xs {
-  .header {
-    .whatsapp {
-      &__phone {
-        display: none;
-      }
+  .blog {
+    padding-bottom: 40px;
+    &__title {
+      margin-bottom: 30px;
     }
-    .side-menu {
-      &__close {
-        top: 22px;
-        right: 15px;
-      }
-      &__backdrop {
-        display: none;
-      }
-      &__wrapper {
-        width: 100%;
-        align-items: center;
-        text-align: center;
-        padding: 90px 20px;
-      }
+    &__search {
+      margin-bottom: 25px;
     }
-    .menu {
-      margin-bottom: 40px;
-      &__link {
-        font-size: 1.3rem;
+    &__cards {
+      grid-template-columns: 1fr;
+      row-gap: 30px;
+    }
+  }
+  .blog-entry {
+    &__image {
+      height: 200px;
+      margin-bottom: 15px;
+    }
+    &__title {
+      font-size: 1.8rem;
+      margin-bottom: 10px;
+    }
+    &__text {
+      font-size: 1.6rem;
+      margin-bottom: 10px;
+    }
+    &__link {
+      .label {
+        font-size: 1.6rem;
       }
     }
   }
@@ -148,5 +157,37 @@
         justify-content: center;
       }
     }
+  }
+  .header {
+    .whatsapp {
+      &__phone {
+        display: none;
+      }
+    }
+    .side-menu {
+      &__close {
+        top: 22px;
+        right: 15px;
+      }
+      &__backdrop {
+        display: none;
+      }
+      &__wrapper {
+        width: 100%;
+        align-items: center;
+        text-align: center;
+        padding: 90px 20px;
+      }
+    }
+    .menu {
+      margin-bottom: 40px;
+      &__link {
+        font-size: 1.3rem;
+      }
+    }
+  }
+  .page-title {
+    font-size: 2rem;
+    padding: 15px 0;
   }
 }
