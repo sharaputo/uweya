@@ -16,3 +16,15 @@ window.addEventListener('keydown', function (event) {
     headerMenu.classList.remove('active');
   }
 });
+
+// Header transform effect
+(function () {
+  const header = document.querySelector('.header');
+  window.onscroll = () => {
+    if (window.pageYOffset > 40) {
+      header.classList.add('active');
+    } else {
+      header.classList.remove('active');
+    }
+  };
+})();
