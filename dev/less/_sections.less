@@ -13,9 +13,6 @@
     padding: 214px 15px;
     margin-bottom: 50px;
   }
-  .text-banner {
-    
-  }
   &__desc {
     max-width: 570px;
     margin-right: auto;
@@ -247,5 +244,26 @@
   }
   &__text + &__subtitle {
     margin-top: 20px;
+  }
+}
+.v-blog {
+  padding-bottom: 90px;
+  &__title {
+    margin-bottom: 40px;
+  }
+  &__search {
+    margin-bottom: 50px;
+  }
+  &__cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(420px, max-content));
+    justify-content: center;
+    justify-items: center;
+    column-gap: 30px;
+    row-gap: 50px;
+    margin-bottom: 50px;
+  }
+  &__more {
+    text-align: center;
   }
 }
