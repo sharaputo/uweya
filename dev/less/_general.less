@@ -192,6 +192,41 @@ h3 {
     }
   }
 }
+.text-banner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  &__content {
+    background-color: @white;
+    padding: 8px 11px;
+  }
+  &__info {
+    border: 1px solid @green-dark;
+    padding: 30px;
+    &--w520 {
+      max-width: 520px;
+    }
+    &--w640 {
+      max-width: 640px;
+    }
+  }
+  &__text {
+    font-size: 1.8rem;
+    line-height: 1.3;
+    & + & {
+      margin-top: 20px;
+    }
+    &--big {
+      font-family: @heading;
+      font-size: 2.4rem;
+      line-height: 1.2;
+      text-align: center;
+    }
+  }
+}
 .text-link {
   transition: color @anim-fast;
   &:hover,

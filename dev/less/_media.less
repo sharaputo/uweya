@@ -43,6 +43,41 @@
 @media @lg {
 }
 @media @md {
+  .about {
+    &__desc {
+      max-width: 650px;
+    }
+    &__hall {
+      flex-direction: column-reverse;
+      justify-content: center;
+      align-items: center;
+      .image {
+        max-width: 650px;
+        flex-basis: auto;
+        margin-right: 0;
+        margin-top: 30px;
+      }
+      .info {
+        max-width: 650px;
+        flex-basis: auto;
+      }
+    }
+    &__founder {
+      flex-direction: column-reverse;
+      justify-content: center;
+      align-items: center;
+      .image {
+        max-width: 650px;
+        flex-basis: auto;
+        margin-bottom: 30px;
+      }
+      .info {
+        max-width: 650px;
+        flex-basis: auto;
+        margin-right: 0;
+      }
+    }
+  }
   .header {
     &__menu {
       display: none;
@@ -62,6 +97,26 @@
   }
 }
 @media @sm {
+  .about {
+    &__hero {
+      padding: 64px 15px;
+    }
+    &__interior {
+      display: block;
+      text-align: center;
+      margin: 45px -5px;
+      img {
+        padding: 5px;
+      }
+      img + img {
+        margin-left: 0;
+      }
+    }
+    &__banner {
+      padding: 35px 15px;
+      margin-bottom: 25px;
+    }
+  }
   .blog {
     &__cards {
       row-gap: 50px;
@@ -87,6 +142,49 @@
   }
 }
 @media @xs {
+  .about {
+    font-size: 1.6rem;
+    &__title {
+      margin-bottom: 30px;
+    }
+    &__hero {
+      margin-bottom: 25px;
+    }
+    &__desc {
+      & + & {
+        margin-top: 15px;
+      }
+    }
+    &__interior {
+      margin-top: 25px;
+      margin-bottom: 25px;
+      img {
+        width: 100%;
+      }
+    }
+    &__hall {
+      margin-bottom: 25px;
+      .image {
+        margin-top: 20px;
+      }
+      .text {
+        &:not(:last-child) {
+          margin-bottom: 15px;
+        }
+      }
+    }
+    &__founder {
+      .subtitle {
+        font-size: 2rem;
+        margin-bottom: 20px;
+      }
+      .text {
+        &:not(:last-child) {
+          margin-bottom: 15px;
+        }
+      }
+    }
+  }
   .article {
     padding-bottom: 40px;
     &__date {
@@ -295,6 +393,23 @@
     }
     &__text + &__subtitle {
       margin-top: 15px;
+    }
+  }
+  .text-banner {
+    &__content {
+      padding: 7px;
+    }
+    &__info {
+      padding: 8px;
+    }
+    &__text {
+      font-size: 1.6rem;
+      & + & {
+        margin-top: 15px;
+      }
+      &--big {
+        font-size: 1.8rem;
+      }
     }
   }
 }
