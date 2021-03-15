@@ -140,6 +140,17 @@
   .container {
     padding: 0 15px;
   }
+  .hall {
+    &__gallery {
+      display: block;
+    }
+    .gallery {
+      &__main {
+        margin-right: 0;
+        margin-bottom: 20px;
+      }
+    }
+  }
 }
 @media @xs {
   .about {
@@ -349,6 +360,49 @@
       }
       &__socials {
         justify-content: center;
+      }
+    }
+  }
+  .hall {
+    padding-bottom: 30px;
+    &__info {
+      padding: 30px 0;
+    }
+    &__text {
+      font-size: 1.6rem;
+    }
+    &__timetable {
+      padding: 30px 0;
+    }
+    &__subtitle {
+      font-size: 2rem;
+      margin-bottom: 20px;
+    }
+    &__pricelist {
+      margin-bottom: 20px;
+    }
+    &__price {
+      display: block;
+      font-size: 1.8rem;
+      text-align: left;
+      padding: 15px;
+      & + & {
+        margin-top: 10px;
+      }
+      .time {
+        margin-bottom: 20px;
+      }
+    }
+    &__gallery {
+      padding-top: 30px;
+    }
+    .gallery {
+      &__main {
+        margin-bottom: 10px;
+      }
+      &__additional {
+        grid-template-columns: 1fr;
+        gap: 10px;
       }
     }
   }

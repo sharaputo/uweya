@@ -229,6 +229,78 @@
     margin-bottom: 20px;
   }
 }
+.hall {
+  padding-bottom: 50px;
+  &__info {
+    background-color: @white;
+    padding: 70px 0;
+  }
+  &__text {
+    max-width: 570px;
+    font-size: 1.8rem;
+    line-height: 1.3;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  &__timetable {
+    text-align: center;
+    background-color: @blue;
+    padding: 90px 0;
+  }
+  &__subtitle {
+    font-size: 3.5rem;
+    margin-bottom: 50px;
+  }
+  &__pricelist {
+    max-width: 800px;
+    margin-bottom: 50px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  &__price {
+    display: flex;
+    justify-content: space-between;
+    font-family: @heading;
+    font-size: 2rem;
+    font-weight: 400;
+    line-height: 1;
+    background-color: @white;
+    padding: 25px;
+    border-radius: 5px;
+    & + & {
+      margin-top: 20px;
+    }
+    .price {
+      color: @green-dark;
+    }
+  }
+  &__gallery {
+    display: flex;
+    padding-top: 50px;
+  }
+  .gallery {
+    &__main {
+      flex-grow: 0;
+      flex-shrink: 1;
+      flex-basis: 50%;
+      margin-right: 20px;
+      img {
+        width: 100%;
+      }
+    }
+    &__additional {
+      flex-grow: 1;
+      flex-shrink: 1;
+      flex-basis: 50%;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 20px;
+      img {
+        width: 100%;
+      }
+    }
+  }
+}
 .rent {
   padding-bottom: 90px;
   &__title {
