@@ -230,8 +230,28 @@
                 </li>
               </ul>
               <div class="popup__error">Пожалуйста, заполните все обязательные поля</div>
-              <button type="submit" class="btn btn--wide popup__btn">Отправить</button>
+              <button type="submit" class="btn btn--wide popup__btn" data-hystmodal="#book_success">
+                Отправить
+              </button>
             </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="hystmodal popup" id="book_success" aria-hidden="true">
+      <div class="hystmodal__wrap">
+        <div class="hystmodal__window" role="dialog" aria-modal="true">
+          <button data-hystclose class="hystmodal__close">
+            <span class="icon-close"></span>
+          </button>
+          <div class="popup__success">
+            <div class="popup__icon">
+              <img src="img/icons/icon-success.svg" alt="">
+            </div>
+            <p class="popup__text">
+              Спасибо! <br>
+              В ближайшее время с вами свяжется менеджер
+            </p>
           </div>
         </div>
       </div>
