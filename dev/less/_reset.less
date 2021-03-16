@@ -6,8 +6,6 @@
 *,
 *:before,
 *:after {
-  -moz-box-sizing: border-box;
-  -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
 :focus,
@@ -50,12 +48,9 @@ button {
 abbr[title],
 abbr[data-original-title] {
   text-decoration: underline;
-  -webkit-text-decoration: underline dotted;
   text-decoration: underline dotted;
   cursor: help;
   border-bottom: 0;
-  -webkit-text-decoration-skip-ink: none;
-  text-decoration-skip-ink: none;
 }
 address {
   margin-bottom: 0;
@@ -157,8 +152,12 @@ fieldset {
 img {
   max-width: 100%;
   height: auto;
-  vertical-align: middle;
-  border-style: none;
+  vertical-align: top;
+}
+img[src$='.svg'] {
+  max-width: none;
+  width: 100%;
+  height: auto;
 }
 input,
 button,
@@ -181,13 +180,10 @@ input[type='tel'],
 input[type='text'],
 textarea {
   appearance: none;
-  -moz-appearance: none;
-  -webkit-appearance: none;
   border-radius: 0;
 }
 input[type='checkbox'],
 input[type='radio'] {
-  -webkit-box-sizing: border-box;
   box-sizing: border-box;
   padding: 0;
 }
@@ -201,7 +197,6 @@ h6 {
   margin-bottom: 0;
 }
 hr {
-  -webkit-box-sizing: content-box;
   box-sizing: content-box;
   height: 0;
   overflow: visible;
@@ -259,12 +254,6 @@ samp {
 }
 select {
   word-wrap: normal;
-}
-svg {
-  max-width: 100%;
-  height: auto;
-  overflow: hidden;
-  vertical-align: middle;
 }
 table {
   border-collapse: collapse;

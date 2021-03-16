@@ -38,3 +38,5 @@ sideMenuBackdrop.addEventListener('click', function () {
     }
   };
 })();
+
+// Modal windows open & close
