@@ -39,4 +39,7 @@ sideMenuBackdrop.addEventListener('click', function () {
   };
 })();
 
-// Modal windows open & close
+// Modal windows
+const popups = new HystModal({
+  linkAttributeName: 'data-hystmodal',
+});
