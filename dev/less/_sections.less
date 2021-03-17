@@ -262,6 +262,22 @@
   }
   &__tags {
     display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+    li {
+      max-width: 295px;
+    }
+  }
+  &__cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 315px);
+    justify-content: center;
+    justify-items: center;
+    column-gap: 23px;
+    row-gap: 50px;
+  }
+  &__card {
+    width: 100%;
   }
 }
 .gallery {

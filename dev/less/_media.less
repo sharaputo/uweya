@@ -152,6 +152,20 @@
   .container {
     padding: 0 15px;
   }
+  .experts {
+    &__tags {
+      display: block;
+      li {
+        max-width: 100%;
+      }
+      li + li {
+        margin-top: 10px;
+      }
+    }
+    &__card {
+      max-width: 315px;
+    }
+  }
   .hall {
     &__gallery {
       display: block;
@@ -223,11 +237,6 @@
     &__search {
       margin-right: 0;
       margin-bottom: 25px;
-    }
-    &__tags {
-      a {
-        font-size: 1.8rem;
-      }
     }
   }
   .article {
@@ -333,6 +342,13 @@
     }
   }
   .content-card {
+    &__image {
+      &--cropped {
+        height: 270px;
+        margin: 15px;
+        margin-bottom: 0;
+      }
+    }
     &__info {
       padding: 15px;
     }
@@ -343,6 +359,19 @@
     &__text {
       font-size: 1.6rem;
       margin-bottom: 15px;
+    }
+  }
+  .experts {
+    padding-bottom: 40px;
+    &__title {
+      margin-bottom: 20px;
+    }
+    &__tags {
+      margin-bottom: 20px;
+    }
+    &__cards {
+      grid-template-columns: 1fr;
+      row-gap: 20px;
     }
   }
   .footer {
@@ -547,6 +576,11 @@
     }
     &__text + &__subtitle {
       margin-top: 15px;
+    }
+  }
+  .tags {
+    &__link {
+      font-size: 1.8rem;
     }
   }
   .text-banner {
