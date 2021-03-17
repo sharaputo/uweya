@@ -78,6 +78,11 @@
       }
     }
   }
+  .blog {
+    &__more {
+      display: none;
+    }
+  }
   .header {
     &__menu {
       display: none;
@@ -201,6 +206,22 @@
         &:not(:last-child) {
           margin-bottom: 15px;
         }
+      }
+    }
+  }
+  .archive {
+    &__header {
+      flex-direction: column;
+      align-items: flex-start;
+      margin-bottom: 25px;
+    }
+    &__search {
+      margin-right: 0;
+      margin-bottom: 25px;
+    }
+    &__tags {
+      a {
+        font-size: 1.8rem;
       }
     }
   }

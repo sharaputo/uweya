@@ -40,6 +40,10 @@ sideMenuBackdrop.addEventListener('click', function () {
 })();
 
 // Modal windows
-const popups = new HystModal({
-  linkAttributeName: 'data-hystmodal',
-});
+let popup = document.querySelector('.popup');
+
+if (popup) {
+  const popups = new HystModal({
+    linkAttributeName: 'data-hystmodal',
+  });
+}
