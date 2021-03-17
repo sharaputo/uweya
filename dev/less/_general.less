@@ -405,6 +405,34 @@ h3 {
     }
   }
 }
+.tags {
+  &__item {
+    border: 1px solid @green;
+  }
+  &__link {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: @heading;
+    font-size: 2rem;
+    font-weight: 400;
+    text-align: center;
+    color: @black;
+    background-color: @white;
+    padding: 15px 20px;
+    transition: color @anim-slow;
+    &.active {
+      color: @white;
+      background-color: @green;
+      cursor: default;
+    }
+    &:hover:not(.active),
+    &:focus:not(.active) {
+      color: @green-dark;
+    }
+  }
+}
 .text-banner {
   display: flex;
   align-items: center;
